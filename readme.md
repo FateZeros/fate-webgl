@@ -17,6 +17,14 @@
 * WebGL 基于 OpenGL ES 2.0
 <strong>可编程着色器方法(programmable shader functions)</strong>被 OpenGL ES 2.0 继承，并成为 WebGL 1.0 标准的核心部分。
 
+## 代码启动
+
+```bash
+npm install http-server -g
+
+// 在 index.html 文件夹下启动
+http-server -p [端口号] .
+```
 
 ***
 **Author** : *FateZeros*
