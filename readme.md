@@ -9,13 +9,15 @@
 
 ## 书签
 
-当前阅读页面 => <strong>39</strong>页
+当前阅读页面 => **54**页
 
 ## 目录
 
 ### Chapter 1 - 简介
 * WebGL 基于 OpenGL ES 2.0
-<strong>可编程着色器方法(programmable shader functions)</strong>被 OpenGL ES 2.0 继承，并成为 WebGL 1.0 标准的核心部分。
+**可编程着色器方法(programmable shader functions)**被 OpenGL ES 2.0 继承，并成为 WebGL 1.0 标准的核心部分。
+
+### Chapter 2 - WebGL 入门
 
 ## 代码启动
 
@@ -36,3 +38,4 @@ http-server -p [端口号] .
 [WebGL 编程指南](https://mengsixing.github.io/book/book-webgl.html) </br>
 [WebGL 书籍学习札记](https://github.com/MrZJD/webgl) </br>
 [WebGL 书籍下载](https://github.com/linghuam/boutique-books) </br>
+[Git readme 书写规范](https://docs.github.com/cn/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)</br>
