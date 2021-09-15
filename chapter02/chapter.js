@@ -20,7 +20,7 @@ function method1() {
     ctx.fillRect(120, 10, 150, 150)
 }
 
-// 
+// canvas 背景色
 function method2() {
     const canvasWrap = document.getElementById('webGL')
 

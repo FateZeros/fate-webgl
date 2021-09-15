@@ -32,3 +32,17 @@ gl.clearColor(0.0, 0.0, 0.0, 1.0)
 | gl.STENCIL_BUFFER_BIT  | 模版缓冲区  | gl.clearStencil() |
 
 默认参数 gl.clearColor(0.0, 0.0, 0.0, 0.0), gl.clearDepth(1.0), gl.clearStencil(0)
+
+## 着色器是什么
+
+**WebGL 依赖着色器(Shader)的绘图机制，来绘制二维/三维的图形**
+
+WebGL 需要两种着色器: 顶点着色器和片元着色器
+
+### 顶点着色器(Vertex Shader)
+
+描述顶点特性(如位置、颜色等)的程序。顶点(Vertex)是指二维/三维空间中的一个点，比如二维/三维图形的端点或者交点。
+
+### 片元着色器(Fragment Shader)
+
+进行逐片元处理过程如光照的程序。片元(Fragment)是一个 WebGL 术语，可以理解为像素(图像中的单元)。

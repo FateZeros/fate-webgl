@@ -9,13 +9,14 @@
 
 ## 书签
 
-当前阅读页面 => **54**页
+当前阅读页面 => **56**页
 
 ## 目录
 
 ### Chapter 1 - 简介
+
 * WebGL 基于 OpenGL ES 2.0
-**可编程着色器方法(programmable shader functions)**被 OpenGL ES 2.0 继承，并成为 WebGL 1.0 标准的核心部分。
+**可编程着色器方法(programmable shader functions)** 被 OpenGL ES 2.0 继承，并成为 WebGL 1.0 标准的核心部分。
 
 ### Chapter 2 - WebGL 入门
 
