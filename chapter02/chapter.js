@@ -1,6 +1,7 @@
 function main() {
     // method1()
-    method2()
+    // method2()
+    method3()
 }
 
 // 普通 canva 图形绘制
@@ -36,4 +37,38 @@ function method2() {
 
     // 清空 canvas 
     gl.clear(gl.COLOR_BUFFER_BIT)
+}
+
+function method3() {
+    // 顶点着色器
+    // gl_Position 顶点位置
+    // gl_PointSize 顶点尺寸
+    var VSHADER_SOURCE = `void main() {
+        gl_Position = vec4(0.0, 0.0, 0.0, 1.0);
+        gl_PointSize = 10.0;
+    }
+    `
+
+    // 片元着色器
+    // gl_FragColor 指定片元颜色
+    var FSHADER_SOURCE = `void main() {
+        gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    }`
+
+    const canvasWrap = document.getElementById('webGL')
+    const gl = getWebGLContext(canvasWrap)
+
+    if (!gl) {
+        return
+    }
+
+    if (!initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE)) {
+        return
+    }
+
+    gl.clearColor(0.0, 0.0, 0.0, 1.0)
+
+    gl.clear(gl.COLOR_BUFFER_BIT)
+
+    gl.drawArrays(gl.POINTS, 0, 1)
 }
