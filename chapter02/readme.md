@@ -66,4 +66,17 @@ WebGL 需要两种着色器: 顶点着色器和片元着色器
 
 ## drawArrays
 
-一个强大的函数，用于绘制各种图形
+一个强大的函数，用于绘制各种图形。
+
+| 参数  | 说明 |
+| ------------- | ------------- |
+| mode | 指定绘制的方式：gl.POINTS、gl.LINES、gl.LINE_STRIP、gl.LINE_LOOP、gl.TRIANGLES、gl.TRIANGLE_STRIP、gl.TRIANGLE_FAN |
+| first | 指定从哪个顶点开始绘制(整数型) |
+| count | 指定绘制需要多少个顶点(整数型) |
+| 返回值 | 无 |
+| 错误 | INVALID_ENUM: 传入的参数 mode 不是指定参数类型。INVALID_VALUE: 参数 first、count 为负数 |
+
+## WebGL 坐标系统
+
+三维坐标系统(笛卡尔坐标系)，具有 X 轴、Y 轴、 Z 轴。参见书籍66页。
+在 WebGL 中，面向计算机，X轴是水平的，正方向向右。Y轴是垂直的，正方向向下。Z轴是垂直于屏幕，正方向向外。

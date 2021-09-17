@@ -70,5 +70,8 @@ function method3() {
 
     gl.clear(gl.COLOR_BUFFER_BIT)
 
+    // gl.POINTS -> 绘制一个点
+    // 0 -> 表示从第一个顶点开始画起
+    // 1 -> 表示只绘制一个点
     gl.drawArrays(gl.POINTS, 0, 1)
 }
