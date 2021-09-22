@@ -92,3 +92,12 @@ WebGL 需要两种着色器: 顶点着色器和片元着色器
 ## JavaScript 与着色器之间传输数据
 
 ### attribute 变量与 uniform 变量
+
+attribute 变量传输的是那些与顶点相关的数据。**变量都以 a_ 开头**
+uniform 变量传输的是那些对于所有顶点都相同的(与顶点无关)数据。**变量都以 u_ 开头**
+
+attribute 方法
+
+1. gl.getAttribLocation(program, name) 函数获取 attribute 变量的存储地址
+2. gl.vertexAttrib3f(locaiton, v1, v2, v3) 函数向 attribute 变量赋值
+
