@@ -86,9 +86,10 @@ function method4() {
     // 声明一个 attribute 变量: attribute -> 存储限定符， vec4 类型， a_Postion 变量；
     var VSHADER_SOURCE = `
     attribute vec4 a_Position;
+    attribute float a_PointSize;
     void main() {
         gl_Position = a_Position;
-        gl_PointSize = 10.0;
+        gl_PointSize = a_PointSize;
     }
     `
 
@@ -114,9 +115,14 @@ function method4() {
     if (a_Position < 0) {
         return
     }
-
     // 将顶点位置传输给 attribute 变量
     gl.vertexAttrib3f(a_Position, 0.0, 0.0, 0.0);
+
+    var a_PointSize = gl.getAttribLocation(gl.program, 'a_PointSize');
+    if (a_PointSize < 0) {
+        return 
+    }
+    gl.vertexAttrib1f(a_PointSize, 20.0);
 
     gl.clearColor(0.0, 0.0, 0.0, 1.0)
 
